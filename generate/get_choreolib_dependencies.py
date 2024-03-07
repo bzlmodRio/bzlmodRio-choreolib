@@ -49,7 +49,6 @@ def get_choreolib_dependencies(
     )
     group.add_module_dependency(allwpilib_dependency)
 
-    
     group.add_cc_meta_dependency(
         "choreolib-cpp",
         deps=[
@@ -61,9 +60,7 @@ def get_choreolib_dependencies(
             # TODO
         },
     )
-    
-    
-    
+
     group.add_java_meta_dependency(
         "choreolib-java",
         group_id=f"com.choreo.lib",
@@ -74,6 +71,5 @@ def get_choreolib_dependencies(
             ("com.google.code.gson:gson", "2.10.1"),
         ],
     )
-    
-    
+
     return group

@@ -47,5 +47,6 @@ def manual_cleanup(repo_dir):
     # Manual cleanup
     pass
 
+
 if __name__ == "__main__":
     main()
