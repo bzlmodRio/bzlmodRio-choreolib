@@ -95,7 +95,7 @@ jobs:
 
           # Pull requests won't be created if the github actions change. Since for this
           # We mostly care about the actual code changes, we will just revert those files
-          git checkout .github/workflows
+          git checkout ../.github/workflows
         else
           echo "No changes!"
         fi;
