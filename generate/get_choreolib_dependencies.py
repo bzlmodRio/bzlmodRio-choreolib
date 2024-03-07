@@ -54,6 +54,7 @@ def get_choreolib_dependencies(
         deps=[
             "ChoreoLib-cpp",
             "wpilibc-cpp",
+            "wpilibNewCommands-cpp",
         ],
         platform_deps={},
         jni_deps={
@@ -66,6 +67,7 @@ def get_choreolib_dependencies(
         group_id=f"com.choreo.lib",
         deps=[
             "wpilibj-java",
+            "wpilibNewCommands-java",
         ],
         maven_deps=[
             ("com.google.code.gson:gson", "2.10.1"),
