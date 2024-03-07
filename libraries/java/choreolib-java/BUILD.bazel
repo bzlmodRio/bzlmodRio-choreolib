@@ -1,0 +1,10 @@
+load("@rules_java//java:defs.bzl", "java_import")
+
+java_import(
+    name = "choreolib-java",
+    jars = ["@com_choreo_lib_choreolib_java//jar:file"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "@bzlmodrio-allwpilib//libraries/java/wpilibj",
+    ],
+)

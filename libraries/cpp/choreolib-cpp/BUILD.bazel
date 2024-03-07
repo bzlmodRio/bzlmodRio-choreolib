@@ -1,0 +1,17 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+alias(
+    name = "choreolib-cpp",
+    actual = ":shared",
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "shared",
+    linkstatic = 1,
+    visibility = ["//visibility:public"],
+    deps = [
+        "@bzlmodrio-allwpilib//libraries/cpp/wpilibc:shared",
+        "@bzlmodrio-choreolib//libraries/cpp/ChoreoLib-cpp:shared",
+    ],
+)
