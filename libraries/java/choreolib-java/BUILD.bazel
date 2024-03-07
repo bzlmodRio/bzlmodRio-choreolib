@@ -1,10 +1,13 @@
 load("@rules_java//java:defs.bzl", "java_import")
+load("@rules_jvm_external//:defs.bzl", "artifact")
 
 java_import(
     name = "choreolib-java",
     jars = ["@com_choreo_lib_choreolib_java//jar:file"],
     visibility = ["//visibility:public"],
     deps = [
+        "@bzlmodrio-allwpilib//libraries/java/wpilibNewCommands",
         "@bzlmodrio-allwpilib//libraries/java/wpilibj",
+        artifact("com.google.code.gson:gson"),
     ],
 )

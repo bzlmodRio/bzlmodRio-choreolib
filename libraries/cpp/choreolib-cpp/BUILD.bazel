@@ -11,7 +11,8 @@ cc_library(
     linkstatic = 1,
     visibility = ["//visibility:public"],
     deps = [
+        "@bzlmodrio-allwpilib//libraries/cpp/wpilibNewCommands:shared",
         "@bzlmodrio-allwpilib//libraries/cpp/wpilibc:shared",
-        "@bzlmodrio-choreolib//libraries/cpp/ChoreoLib-cpp:shared",
+        "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared",
     ],
 )

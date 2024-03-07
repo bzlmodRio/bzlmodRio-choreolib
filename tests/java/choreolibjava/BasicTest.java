@@ -1,13 +1,13 @@
+package choreolibjava;
 
-package bazelrio_test;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
+import com.choreo.lib.Choreo;
+import com.choreo.lib.ChoreoTrajectory;
 import org.junit.jupiter.api.Test;
 
 class BasicTest {
   @Test
   void basicTest() {
-    assertTrue(false);
+    ChoreoTrajectory traj = Choreo.getTrajectory("Trajectory");
+    System.out.println(traj);
   }
 }
