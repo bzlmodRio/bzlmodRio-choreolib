@@ -14,3 +14,15 @@ def setup_legacy_bzlmodrio_choreolib_java_dependencies():
 setup_bzlmodrio_choreolib_java_dependencies = module_extension(
     __setup_bzlmodrio_choreolib_java_dependencies,
 )
+
+def get_bzlmodrio_choreolib_java_dependencies():
+    artifacts = [
+        "com.google.code.gson:gson:2.10.1",
+    ]
+    repositories = [
+        "https://repo1.maven.org/maven2",
+        "https://frcmaven.wpi.edu/release",
+        "https://SleipnirGroup.github.io/ChoreoLib/dep",
+    ]
+
+    return artifacts, repositories

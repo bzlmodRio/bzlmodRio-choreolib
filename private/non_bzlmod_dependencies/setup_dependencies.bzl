@@ -1,7 +1,7 @@
 load("@bzlmodrio-allwpilib//:maven_cpp_deps.bzl", "setup_legacy_bzlmodrio_allwpilib_cpp_dependencies")
 load("@bzlmodrio-allwpilib//:maven_java_deps.bzl", "get_bzlmodrio_allwpilib_java_dependencies", "setup_legacy_bzlmodrio_allwpilib_java_dependencies")
 load("@bzlmodrio-choreolib//:maven_cpp_deps.bzl", "setup_legacy_bzlmodrio_choreolib_cpp_dependencies")
-load("@bzlmodrio-choreolib//:maven_java_deps.bzl", "setup_legacy_bzlmodrio_choreolib_java_dependencies")
+load("@bzlmodrio-choreolib//:maven_java_deps.bzl", "get_bzlmodrio_choreolib_java_dependencies", "setup_legacy_bzlmodrio_choreolib_java_dependencies")
 load("@bzlmodrio-ni//:maven_cpp_deps.bzl", "setup_legacy_bzlmodrio_ni_cpp_dependencies")
 load("@bzlmodrio-opencv//:maven_cpp_deps.bzl", "setup_legacy_bzlmodrio_opencv_cpp_dependencies")
 load("@bzlmodrio-opencv//:maven_java_deps.bzl", "setup_legacy_bzlmodrio_opencv_java_dependencies")
@@ -52,6 +52,7 @@ def _combine_maven_info(maven_artifacts, maven_repositories, setup_functor):
 
 def get_java_dependenicies():
     maven_artifacts, maven_repositories = [], []
+    maven_artifacts, maven_repositories = _combine_maven_info(maven_artifacts, maven_repositories, get_bzlmodrio_choreolib_java_dependencies)
     maven_artifacts, maven_repositories = _combine_maven_info(maven_artifacts, maven_repositories, get_bzlmodrio_allwpilib_java_dependencies)
 
     return maven_artifacts, maven_repositories

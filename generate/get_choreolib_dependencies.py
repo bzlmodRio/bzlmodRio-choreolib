@@ -59,6 +59,9 @@ def get_choreolib_dependencies(
         deps=[
             "wpilibj-java",
         ],
+        maven_deps=[
+            ("com.google.code.gson:gson", "2.10.1"),
+        ],
     )
     
     
