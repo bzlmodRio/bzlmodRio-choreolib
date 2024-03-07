@@ -35,6 +35,17 @@ def get_choreolib_dependencies(
         os.path.join(SCRIPT_DIR, f"vendor_dep.json"),
         fail_on_hash_miss=False,
         has_static_libraries=False,
+        install_name_lookup={
+            "ChoreoLib-cpp": dict(
+                artifact_install_name="ChoreoLib",
+                deps=[
+                    allwpilib_dependency.container.get_cc_dependency("wpilibc-cpp"),
+                    allwpilib_dependency.container.get_cc_dependency(
+                        "wpilibNewCommands-cpp"
+                    ),
+                ],
+            ),
+        },
     )
     group.add_module_dependency(allwpilib_dependency)
 
