@@ -53,9 +53,12 @@ def manual_cleanup(repo_dir):
         with open(filename, "w") as f:
             f.write(contents)
 
-    helper(os.path.join(
-        repo_dir, "libraries", "cpp", "choreolib-cpp", "BUILD.bazel"
-    ), lambda x: x.replace("@bzlmodrio-choreolib//libraries", "@bzlmodrio-choreolib//private"))
+    helper(
+        os.path.join(repo_dir, "libraries", "cpp", "choreolib-cpp", "BUILD.bazel"),
+        lambda x: x.replace(
+            "@bzlmodrio-choreolib//libraries", "@bzlmodrio-choreolib//private"
+        ),
+    )
 
 
 if __name__ == "__main__":
