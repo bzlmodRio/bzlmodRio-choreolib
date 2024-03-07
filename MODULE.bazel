@@ -1,0 +1,47 @@
+module(
+    name = "bzlmodrio-choreolib",
+    version = "2024.1.2",
+    compatibility_level = 2024,
+)
+
+bazel_dep(name = "platforms", version = "0.0.7")
+bazel_dep(name = "rules_cc", version = "0.0.9")
+bazel_dep(name = "rules_java", version = "6.4.0")
+bazel_dep(name = "rules_jvm_external", version = "5.3")
+bazel_dep(name = "rules_bazelrio", version = "0.0.14")
+bazel_dep(name = "rules_bzlmodrio_toolchains", version = "2024-1")
+bazel_dep(name = "bzlmodrio-allwpilib", version = "2024.1.1")
+bazel_dep(name = "bzlmodrio-opencv", version = "2024.4.8.0-1")
+bazel_dep(name = "bzlmodrio-ni", version = "2024.2.1")
+
+maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+maven.install(
+    artifacts = [
+        "com.google.code.gson:gson:2.10.1",
+    ],
+    repositories = [
+        "https://repo1.maven.org/maven2",
+        "https://frcmaven.wpi.edu/release",
+        "https://SleipnirGroup.github.io/ChoreoLib/dep",
+    ],
+)
+use_repo(
+    maven,
+    "maven",
+)
+
+setup_bzlmodrio_choreolib_cpp_dependencies = use_extension("//:maven_cpp_deps.bzl", "setup_bzlmodrio_choreolib_cpp_dependencies")
+use_repo(
+    setup_bzlmodrio_choreolib_cpp_dependencies,
+    "bazelrio_com_choreo_lib_choreolib-cpp_headers",
+    "bazelrio_com_choreo_lib_choreolib-cpp_linuxathena",
+    "bazelrio_com_choreo_lib_choreolib-cpp_linuxx86-64",
+    "bazelrio_com_choreo_lib_choreolib-cpp_osxuniversal",
+    "bazelrio_com_choreo_lib_choreolib-cpp_windowsx86-64",
+)
+
+setup_bzlmodrio_choreolib_java_dependencies = use_extension("//:maven_java_deps.bzl", "setup_bzlmodrio_choreolib_java_dependencies")
+use_repo(
+    setup_bzlmodrio_choreolib_java_dependencies,
+    "com_choreo_lib_choreolib_java",
+)

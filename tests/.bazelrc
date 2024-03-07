@@ -1,0 +1,27 @@
+try-import user.bazelrc
+import .bazelrc-cc
+import .bazelrc-java
+import .bazelrc-buildbuddy
+
+# Roborio
+build:roborio --platforms=@rules_bzlmodrio_toolchains//platforms/roborio
+build:roborio --build_tag_filters=-no-roborio
+build:roborio --platform_suffix=roborio
+
+# bullseye32
+build:bullseye32 --platforms=@rules_bzlmodrio_toolchains//platforms/bullseye32
+build:bullseye32 --build_tag_filters=-no-bullseye
+build:bullseye32 --platform_suffix=bullseye32
+
+# bullseye64
+build:bullseye64 --platforms=@rules_bzlmodrio_toolchains//platforms/bullseye64
+build:bullseye64 --build_tag_filters=-no-bullseye
+build:bullseye64 --platform_suffix=bullseye64
+
+# rasppi
+build:raspi32 --platforms=@rules_bzlmodrio_toolchains//platforms/raspi32
+build:raspi32 --build_tag_filters=-no-raspi
+build:raspi32 --platform_suffix=raspi32
+
+test --test_output=errors
+common --registry=https://raw.githubusercontent.com/pjreiniger/bazel-central-registry/bzlmodrio/
