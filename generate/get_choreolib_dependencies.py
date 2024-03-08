@@ -46,7 +46,7 @@ def get_choreolib_dependencies(
                 ],
             ),
         },
-        maven_dependency_ignore_list=["gson"]
+        maven_dependency_ignore_list=["gson"],
     )
     group.add_module_dependency(allwpilib_dependency)
 
