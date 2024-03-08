@@ -80,29 +80,29 @@ def __setup_bzlmodrio_choreolib_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_com_choreo_lib_choreolib-cpp_headers",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.2/ChoreoLib-cpp-2024.1.2-headers.zip",
-        sha256 = "2f56c346aa4b32342ec203b64d7c239c013e620a3ae944bd10aab920e615ebcf",
+        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-headers.zip",
+        sha256 = "c864c66c948c8b9c73b91b20675688e7abb2c9490099879463c214f0486e0d90",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "bazelrio_com_choreo_lib_choreolib-cpp_windowsx86-64",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.2/ChoreoLib-cpp-2024.1.2-windowsx86-64.zip",
-        sha256 = "e2a3f70d73e44d300de8ac0502d783ba7ba80acf9c7d2a1a7b045395f29c6dad",
+        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-windowsx86-64.zip",
+        sha256 = "c0c4c9e917c4f2fdf566014558441a56978d203c21d28676bb27916364cc5256",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_com_choreo_lib_choreolib-cpp_linuxx86-64",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.2/ChoreoLib-cpp-2024.1.2-linuxx86-64.zip",
-        sha256 = "6a99131f0fefb3114f8c62c9ea11c454fe86e133b970cfe3ffdc125bf38ff637",
+        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-linuxx86-64.zip",
+        sha256 = "cd2022648cfc85f20b4245deb0797b03fde1019e037730fde6a73dfe7c521bb8",
         build_file_content = cc_library_shared,
     )
     maybe(
         http_archive,
         "bazelrio_com_choreo_lib_choreolib-cpp_osxuniversal",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.2/ChoreoLib-cpp-2024.1.2-osxuniversal.zip",
-        sha256 = "8bec8fa36ec80ad5e16465d1366dc67f90ceadde4d95116c5f222dc218e9d019",
+        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-osxuniversal.zip",
+        sha256 = "c2857e7b29f07b2502147e0f2769448dfac164fc23f7da5eb3e46c9282509fd2",
         build_file_content = cc_library_shared,
         patch_cmds = [
             "install_name_tool -id @rpath/libChoreoLib.dylib osx/universal/shared/libChoreoLib.dylib",
@@ -120,8 +120,8 @@ def __setup_bzlmodrio_choreolib_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_com_choreo_lib_choreolib-cpp_linuxathena",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.2/ChoreoLib-cpp-2024.1.2-linuxathena.zip",
-        sha256 = "d1a6eb00ff168dad884be10be2320343fb65006279052e446e9e555a180eeb00",
+        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-linuxathena.zip",
+        sha256 = "c8c2a726c0f0ba42e62107f3a55512e28de3f34c199be8d9ed04d64caae301c0",
         build_file_content = cc_library_shared,
     )
 
