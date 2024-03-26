@@ -1678,7 +1678,7 @@
   "moduleExtensions": {
     "//:maven_cpp_deps.bzl%setup_bzlmodrio_choreolib_cpp_dependencies": {
       "general": {
-        "bzlTransitiveDigest": "qf3+AtJPaCUaJTlh2JfBJtIk48jcEawC48yUJOFooWI=",
+        "bzlTransitiveDigest": "Xgx8pUl1c0D29CGLcHC25x6KCuDVBJmnQ6cfPsCegMI=",
         "accumulatedFileDigests": {},
         "envVariables": {},
         "generatedRepoSpecs": {
@@ -1687,8 +1687,8 @@
             "ruleClassName": "http_archive",
             "attributes": {
               "name": "_main~setup_bzlmodrio_choreolib_cpp_dependencies~bazelrio_com_choreo_lib_choreolib-cpp_windowsx86-64",
-              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-windowsx86-64.zip",
-              "sha256": "c0c4c9e917c4f2fdf566014558441a56978d203c21d28676bb27916364cc5256",
+              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.2.2/ChoreoLib-cpp-2024.2.2-windowsx86-64.zip",
+              "sha256": "d612add11b457f936b23cc7fac94b7ae5e58e3266aaf98fcc523b33a97f2fb72",
               "build_file_content": "\nJNI_PATTERN=[\n    \"**/*jni.dll\",\n    \"**/*jni.so*\",\n    \"**/*jni.dylib\",\n    \"**/*_java*.dll\",\n    \"**/lib*_java*.dylib\",\n    \"**/lib*_java*.so\",\n]\n\nstatic_srcs = glob([\n        \"**/*.lib\",\n        \"**/*.a\"\n    ],\n    exclude=[\"**/*jni.lib\"]\n)\nshared_srcs = glob([\n        \"**/*.dll\",\n        \"**/*.so*\",\n        \"**/*.dylib\",\n    ],\n    exclude=JNI_PATTERN + [\"**/*.so.debug\"]\n)\nshared_jni_srcs = glob(JNI_PATTERN, exclude=[\"**/*.so.debug\"])\n\nfilegroup(\n    name = \"static_libs\",\n    srcs = static_srcs,\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"shared_libs\",\n    srcs = shared_srcs,\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"shared_jni_libs\",\n    srcs = shared_jni_srcs,\n    visibility = [\"//visibility:public\"],\n)\n"
             }
           },
@@ -1697,8 +1697,8 @@
             "ruleClassName": "http_archive",
             "attributes": {
               "name": "_main~setup_bzlmodrio_choreolib_cpp_dependencies~bazelrio_com_choreo_lib_choreolib-cpp_osxuniversal",
-              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-osxuniversal.zip",
-              "sha256": "c2857e7b29f07b2502147e0f2769448dfac164fc23f7da5eb3e46c9282509fd2",
+              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.2.2/ChoreoLib-cpp-2024.2.2-osxuniversal.zip",
+              "sha256": "afa750c5761e4743bc81a6434a571b90faf94f4661d1547f92006f507a2eaccb",
               "build_file_content": "\nJNI_PATTERN=[\n    \"**/*jni.dll\",\n    \"**/*jni.so*\",\n    \"**/*jni.dylib\",\n    \"**/*_java*.dll\",\n    \"**/lib*_java*.dylib\",\n    \"**/lib*_java*.so\",\n]\n\nstatic_srcs = glob([\n        \"**/*.lib\",\n        \"**/*.a\"\n    ],\n    exclude=[\"**/*jni.lib\"]\n)\nshared_srcs = glob([\n        \"**/*.dll\",\n        \"**/*.so*\",\n        \"**/*.dylib\",\n    ],\n    exclude=JNI_PATTERN + [\"**/*.so.debug\"]\n)\nshared_jni_srcs = glob(JNI_PATTERN, exclude=[\"**/*.so.debug\"])\n\nfilegroup(\n    name = \"static_libs\",\n    srcs = static_srcs,\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"shared_libs\",\n    srcs = shared_srcs,\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"shared_jni_libs\",\n    srcs = shared_jni_srcs,\n    visibility = [\"//visibility:public\"],\n)\n",
               "patch_cmds": [
                 "install_name_tool -id @rpath/libChoreoLib.dylib osx/universal/shared/libChoreoLib.dylib",
@@ -1719,8 +1719,8 @@
             "ruleClassName": "http_archive",
             "attributes": {
               "name": "_main~setup_bzlmodrio_choreolib_cpp_dependencies~bazelrio_com_choreo_lib_choreolib-cpp_linuxathena",
-              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-linuxathena.zip",
-              "sha256": "c8c2a726c0f0ba42e62107f3a55512e28de3f34c199be8d9ed04d64caae301c0",
+              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.2.2/ChoreoLib-cpp-2024.2.2-linuxathena.zip",
+              "sha256": "23f2446587b8ce3493a17d21fa569f628d12bce6df6363470b577299234b012a",
               "build_file_content": "\nJNI_PATTERN=[\n    \"**/*jni.dll\",\n    \"**/*jni.so*\",\n    \"**/*jni.dylib\",\n    \"**/*_java*.dll\",\n    \"**/lib*_java*.dylib\",\n    \"**/lib*_java*.so\",\n]\n\nstatic_srcs = glob([\n        \"**/*.lib\",\n        \"**/*.a\"\n    ],\n    exclude=[\"**/*jni.lib\"]\n)\nshared_srcs = glob([\n        \"**/*.dll\",\n        \"**/*.so*\",\n        \"**/*.dylib\",\n    ],\n    exclude=JNI_PATTERN + [\"**/*.so.debug\"]\n)\nshared_jni_srcs = glob(JNI_PATTERN, exclude=[\"**/*.so.debug\"])\n\nfilegroup(\n    name = \"static_libs\",\n    srcs = static_srcs,\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"shared_libs\",\n    srcs = shared_srcs,\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"shared_jni_libs\",\n    srcs = shared_jni_srcs,\n    visibility = [\"//visibility:public\"],\n)\n"
             }
           },
@@ -1729,8 +1729,8 @@
             "ruleClassName": "http_archive",
             "attributes": {
               "name": "_main~setup_bzlmodrio_choreolib_cpp_dependencies~bazelrio_com_choreo_lib_choreolib-cpp_headers",
-              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-headers.zip",
-              "sha256": "c864c66c948c8b9c73b91b20675688e7abb2c9490099879463c214f0486e0d90",
+              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.2.2/ChoreoLib-cpp-2024.2.2-headers.zip",
+              "sha256": "026b58d203b218cf52d656eb686370b9d9734acfba9064eaa7fc33a0bbd32a6f",
               "build_file_content": "cc_library(\n    name = \"headers\",\n    hdrs = glob([\"**\"]),\n    includes = [\".\"],\n    visibility = [\"//visibility:public\"],\n)\n"
             }
           },
@@ -1739,8 +1739,8 @@
             "ruleClassName": "http_archive",
             "attributes": {
               "name": "_main~setup_bzlmodrio_choreolib_cpp_dependencies~bazelrio_com_choreo_lib_choreolib-cpp_linuxx86-64",
-              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.1.3/ChoreoLib-cpp-2024.1.3-linuxx86-64.zip",
-              "sha256": "cd2022648cfc85f20b4245deb0797b03fde1019e037730fde6a73dfe7c521bb8",
+              "url": "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-cpp/2024.2.2/ChoreoLib-cpp-2024.2.2-linuxx86-64.zip",
+              "sha256": "8d3f494b14db201410582f8e40b11f348b410f3135365a3b9b423711fadd8e73",
               "build_file_content": "\nJNI_PATTERN=[\n    \"**/*jni.dll\",\n    \"**/*jni.so*\",\n    \"**/*jni.dylib\",\n    \"**/*_java*.dll\",\n    \"**/lib*_java*.dylib\",\n    \"**/lib*_java*.so\",\n]\n\nstatic_srcs = glob([\n        \"**/*.lib\",\n        \"**/*.a\"\n    ],\n    exclude=[\"**/*jni.lib\"]\n)\nshared_srcs = glob([\n        \"**/*.dll\",\n        \"**/*.so*\",\n        \"**/*.dylib\",\n    ],\n    exclude=JNI_PATTERN + [\"**/*.so.debug\"]\n)\nshared_jni_srcs = glob(JNI_PATTERN, exclude=[\"**/*.so.debug\"])\n\nfilegroup(\n    name = \"static_libs\",\n    srcs = static_srcs,\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"shared_libs\",\n    srcs = shared_srcs,\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"shared_jni_libs\",\n    srcs = shared_jni_srcs,\n    visibility = [\"//visibility:public\"],\n)\n"
             }
           }
@@ -1749,7 +1749,7 @@
     },
     "//:maven_java_deps.bzl%setup_bzlmodrio_choreolib_java_dependencies": {
       "general": {
-        "bzlTransitiveDigest": "+4TNoag26H970SG3Dwo4AYg+640NNr167O5g2aOhjuU=",
+        "bzlTransitiveDigest": "xhepZlKxFBO58RLFpkaB5yGb3mniuR2KbabTQLWCAVY=",
         "accumulatedFileDigests": {},
         "envVariables": {},
         "generatedRepoSpecs": {
@@ -1758,17 +1758,17 @@
             "ruleClassName": "jvm_import_external",
             "attributes": {
               "artifact_urls": [
-                "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-java/2024.1.3/ChoreoLib-java-2024.1.3.jar"
+                "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-java/2024.2.2/ChoreoLib-java-2024.2.2.jar"
               ],
               "srcjar_urls": [],
-              "canonical_id": "com.choreo.lib:ChoreoLib-java:2024.1.3",
+              "canonical_id": "com.choreo.lib:ChoreoLib-java:2024.2.2",
               "rule_name": "java_import",
               "rule_load": "load(\"@rules_java//java:defs.bzl\", \"java_import\")",
               "tags": [
-                "maven_coordinates=com.choreo.lib:ChoreoLib-java:2024.1.3"
+                "maven_coordinates=com.choreo.lib:ChoreoLib-java:2024.2.2"
               ],
               "name": "_main~setup_bzlmodrio_choreolib_java_dependencies~com_choreo_lib_choreolib_java",
-              "artifact_sha256": "a78a7206cb0146b6d21650e50f44f7531f737805cd5eb6ff94aeae4cf7f5de56"
+              "artifact_sha256": "a521838aae0eb88b15b73965933d9e829a254a89044c8bc82e27883093c6629c"
             }
           }
         }
