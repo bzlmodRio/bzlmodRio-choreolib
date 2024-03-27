@@ -105,6 +105,10 @@ jobs:
       run: echo "NEW_VERSION=$(bazel run //:get_version)" >> $GITHUB_ENV
       working-directory: libraries/bzlmodrio-choreolib/generate
 
+    - name: Store new version
+      run: echo ${{ env.NEW_VERSION }}
+      working-directory: libraries/bzlmodrio-choreolib/generate
+
     # Create pull requests
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
