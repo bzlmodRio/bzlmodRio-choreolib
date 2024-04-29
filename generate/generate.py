@@ -8,6 +8,7 @@ from bazelrio_gentool.generate_module_project_files import (
     create_default_mandatory_settings,
 )
 from bazelrio_gentool.cli import add_generic_cli, GenericCliArgs
+from bazelrio_gentool.manual_cleanup_helper import manual_cleanup_helper
 import argparse
 
 
@@ -44,16 +45,7 @@ def main():
 
 
 def manual_cleanup(repo_dir):
-    def helper(filename, callback):
-        with open(filename, "r") as f:
-            contents = f.read()
-
-        contents = callback(contents)
-
-        with open(filename, "w") as f:
-            f.write(contents)
-
-    helper(
+    manual_cleanup_helper(
         os.path.join(repo_dir, "libraries", "cpp", "choreolib-cpp", "BUILD.bazel"),
         lambda x: x.replace(
             "@bzlmodrio-choreolib//libraries", "@bzlmodrio-choreolib//private"
