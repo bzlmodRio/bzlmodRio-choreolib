@@ -1,6 +1,6 @@
 module(
     name = "bzlmodrio-choreolib",
-    version = "2024.2.2",
+    version = "2024.2.3",
     compatibility_level = 2024,
 )
 
