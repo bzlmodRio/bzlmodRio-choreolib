@@ -1,5 +1,11 @@
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
+alias(
+    name = "header_files",
+    actual = "@bazelrio_com_choreo_lib_choreolib-cpp_headers//:header_files",
+    visibility = ["@bzlmodrio-choreolib//:__subpackages__"],
+)
+
 cc_library(
     name = "shared_interface",
     srcs = select({
@@ -13,12 +19,6 @@ cc_library(
     }),
     visibility = ["@bzlmodrio-choreolib//:__subpackages__"],
     deps = ["@bazelrio_com_choreo_lib_choreolib-cpp_headers//:headers"],
-)
-
-alias(
-    name = "header_files",
-    actual = "@bazelrio_com_choreo_lib_choreolib-cpp_headers//:header_files",
-    visibility = ["@bzlmodrio-choreolib//:__subpackages__"],
 )
 
 filegroup(
