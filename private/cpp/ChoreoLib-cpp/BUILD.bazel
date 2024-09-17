@@ -30,6 +30,7 @@ filegroup(
         "@rules_bzlmodrio_toolchains//constraints/is_bullseye32:bullseye32": ["@bazelrio_com_choreo_lib_choreolib-cpp_linuxarm32//:shared"],
         "@rules_bzlmodrio_toolchains//constraints/is_bullseye64:bullseye64": ["@bazelrio_com_choreo_lib_choreolib-cpp_linuxarm64//:shared"],
         "@rules_bzlmodrio_toolchains//constraints/is_roborio:roborio": ["@bazelrio_com_choreo_lib_choreolib-cpp_linuxathena//:shared"],
+        "//conditions:default": [],
     }),
     visibility = ["@bzlmodrio-choreolib//:__subpackages__"],
 )
