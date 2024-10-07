@@ -1,6 +1,6 @@
 module(
     name = "bzlmodrio-choreolib",
-    version = "2024.2.3",
+    version = "2025.0.0-beta-2",
     compatibility_level = 2024,
 )
 
@@ -32,15 +32,17 @@ use_repo(
 setup_bzlmodrio_choreolib_cpp_dependencies = use_extension("//:maven_cpp_deps.bzl", "setup_bzlmodrio_choreolib_cpp_dependencies")
 use_repo(
     setup_bzlmodrio_choreolib_cpp_dependencies,
-    "bazelrio_com_choreo_lib_choreolib-cpp_headers",
-    "bazelrio_com_choreo_lib_choreolib-cpp_linuxathena",
-    "bazelrio_com_choreo_lib_choreolib-cpp_linuxx86-64",
-    "bazelrio_com_choreo_lib_choreolib-cpp_osxuniversal",
-    "bazelrio_com_choreo_lib_choreolib-cpp_windowsx86-64",
+    "bazelrio_choreo_choreolib-cpp_headers",
+    "bazelrio_choreo_choreolib-cpp_linuxarm32",
+    "bazelrio_choreo_choreolib-cpp_linuxarm64",
+    "bazelrio_choreo_choreolib-cpp_linuxathena",
+    "bazelrio_choreo_choreolib-cpp_linuxx86-64",
+    "bazelrio_choreo_choreolib-cpp_osxuniversal",
+    "bazelrio_choreo_choreolib-cpp_windowsx86-64",
 )
 
 setup_bzlmodrio_choreolib_java_dependencies = use_extension("//:maven_java_deps.bzl", "setup_bzlmodrio_choreolib_java_dependencies")
 use_repo(
     setup_bzlmodrio_choreolib_java_dependencies,
-    "com_choreo_lib_choreolib_java",
+    "choreo_choreolib_java",
 )

@@ -1,10 +1,10 @@
 
-#include <choreo/lib/Choreo.h>
+#include <choreo/Choreo.h>
 
 #include <iostream>
 
 int main() {
-  choreolib::Choreo::GetTrajectory("Test");
+  choreo::Choreo::LoadTrajectory<choreo::SwerveSample>("Test");
   std::cout << "Hello World" << std::endl;
   // std::cout << xxx << std::endl;
   return 0;

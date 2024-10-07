@@ -1,10 +1,10 @@
 
-#include <choreo/lib/Choreo.h>
+#include <choreo/Choreo.h>
 
 #include "gtest/gtest.h"
 
 TEST(BasicTest, Basic) {
-  EXPECT_THROW(choreolib::ChoreoTrajectory traj =
-                   choreolib::Choreo::GetTrajectory("Test"),
-               std::exception);
+  auto maybeTrajectory =
+      choreo::Choreo::LoadTrajectory<choreo::SwerveSample>("Test");
+  EXPECT_FALSE(maybeTrajectory);
 }
