@@ -65,7 +65,7 @@ def get_choreolib_dependencies(
 
     group.add_java_meta_dependency(
         "choreolib-java",
-        group_id=f"com.choreo.lib",
+        group_id=f"choreo",
         deps=[
             "wpilibj-java",
             "wpilibNewCommands-java",
