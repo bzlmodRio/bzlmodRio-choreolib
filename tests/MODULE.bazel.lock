@@ -4628,27 +4628,27 @@
     },
     "@@bzlmodrio-choreolib~//:maven_java_deps.bzl%setup_bzlmodrio_choreolib_java_dependencies": {
       "general": {
-        "bzlTransitiveDigest": "JeKvmW8uUHFx2pRdKSzFoHAk15jGL11PFfIw3usg+uE=",
-        "usagesDigest": "YqxVaYE6ijPzahHsEBUHqwg02hNSjzNBG4n1tO9hRcs=",
+        "bzlTransitiveDigest": "7m6npAdrQos5FkoWRqb5ItxFgOqZyB9PYHI+llrfObI=",
+        "usagesDigest": "LcKXjCAaFNpAu/QCHnO8SjtThCSx3K7LEN4SFSM6sSY=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
         "generatedRepoSpecs": {
-          "com_choreo_lib_choreolib_java": {
+          "choreo_choreolib_java": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:jvm.bzl",
             "ruleClassName": "jvm_import_external",
             "attributes": {
-              "generated_rule_name": "com_choreo_lib_choreolib_java",
+              "generated_rule_name": "choreo_choreolib_java",
               "artifact_urls": [
-                "https://SleipnirGroup.github.io/ChoreoLib/dep/com/choreo/lib/ChoreoLib-java/2024.2.3/ChoreoLib-java-2024.2.3.jar"
+                "https://SleipnirGroup.github.io/ChoreoLib/dep/choreo/ChoreoLib-java/2025.0.0-beta-2/ChoreoLib-java-2025.0.0-beta-2.jar"
               ],
               "srcjar_urls": [],
-              "canonical_id": "com.choreo.lib:ChoreoLib-java:2024.2.3",
+              "canonical_id": "choreo:ChoreoLib-java:2025.0.0-beta-2",
               "rule_name": "java_import",
               "tags": [
-                "maven_coordinates=com.choreo.lib:ChoreoLib-java:2024.2.3"
+                "maven_coordinates=choreo:ChoreoLib-java:2025.0.0-beta-2"
               ],
-              "artifact_sha256": "062ff4908dbf63b0e9478add5e1488b6f5aeec332491c381e4aeb540073f22b3"
+              "artifact_sha256": "911bc4fc13d77e9638e4d4c05104127e16f07070a4bf7a6faa4a9bb5abafc146"
             }
           }
         },
