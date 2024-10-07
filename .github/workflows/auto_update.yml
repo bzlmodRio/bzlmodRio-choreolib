@@ -50,7 +50,7 @@ jobs:
         path: libraries/bzlmodrio-choreolib/../../libraries/bzlmodRio-allwpilib
         ref: main
 
-    # Checkout bzlmodrio-opencv
+    # Checkout backdoor generation of wpilibsuite libraries
     - uses: actions/checkout@v4
       with:
         repository: 'bzlmodRio/wpilibsuite_generator.git'
