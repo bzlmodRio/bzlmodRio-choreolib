@@ -2,14 +2,14 @@ load("@rules_cc//cc:defs.bzl", "cc_library")
 
 alias(
     name = "header_files",
-    actual = "@bazelrio_com_choreo_lib_choreolib-cpp_headers//:header_files",
+    actual = "@bazelrio_choreo_choreolib-cpp_headers//:header_files",
     visibility = ["@bzlmodrio-choreolib//:__subpackages__"],
 )
 
 cc_library(
     name = "shared_interface",
     srcs = select({
-        "@rules_bzlmodrio_toolchains//conditions:windows": ["@bazelrio_com_choreo_lib_choreolib-cpp_windowsx86-64//:shared_interface"],
+        "@rules_bzlmodrio_toolchains//conditions:windows": ["@bazelrio_choreo_choreolib-cpp_windowsx86-64//:shared_interface"],
     }),
     linkstatic = True,
     tags = ["manual"],
@@ -18,18 +18,18 @@ cc_library(
         "//conditions:default": [],
     }),
     visibility = ["@bzlmodrio-choreolib//:__subpackages__"],
-    deps = ["@bazelrio_com_choreo_lib_choreolib-cpp_headers//:headers"],
+    deps = ["@bazelrio_choreo_choreolib-cpp_headers//:headers"],
 )
 
 filegroup(
     name = "shared_raw",
     srcs = select({
-        "@rules_bzlmodrio_toolchains//conditions:linux_x86_64": ["@bazelrio_com_choreo_lib_choreolib-cpp_linuxx86-64//:shared"],
-        "@rules_bzlmodrio_toolchains//conditions:osx": ["@bazelrio_com_choreo_lib_choreolib-cpp_osxuniversal//:shared"],
-        "@rules_bzlmodrio_toolchains//conditions:windows": ["@bazelrio_com_choreo_lib_choreolib-cpp_windowsx86-64//:shared"],
-        "@rules_bzlmodrio_toolchains//constraints/is_bullseye32:bullseye32": ["@bazelrio_com_choreo_lib_choreolib-cpp_linuxarm32//:shared"],
-        "@rules_bzlmodrio_toolchains//constraints/is_bullseye64:bullseye64": ["@bazelrio_com_choreo_lib_choreolib-cpp_linuxarm64//:shared"],
-        "@rules_bzlmodrio_toolchains//constraints/is_roborio:roborio": ["@bazelrio_com_choreo_lib_choreolib-cpp_linuxathena//:shared"],
+        "@rules_bzlmodrio_toolchains//conditions:linux_x86_64": ["@bazelrio_choreo_choreolib-cpp_linuxx86-64//:shared"],
+        "@rules_bzlmodrio_toolchains//conditions:osx": ["@bazelrio_choreo_choreolib-cpp_osxuniversal//:shared"],
+        "@rules_bzlmodrio_toolchains//conditions:windows": ["@bazelrio_choreo_choreolib-cpp_windowsx86-64//:shared"],
+        "@rules_bzlmodrio_toolchains//constraints/is_bullseye32:bullseye32": ["@bazelrio_choreo_choreolib-cpp_linuxarm32//:shared"],
+        "@rules_bzlmodrio_toolchains//constraints/is_bullseye64:bullseye64": ["@bazelrio_choreo_choreolib-cpp_linuxarm64//:shared"],
+        "@rules_bzlmodrio_toolchains//constraints/is_roborio:roborio": ["@bazelrio_choreo_choreolib-cpp_linuxathena//:shared"],
         "//conditions:default": [],
     }),
     visibility = ["@bzlmodrio-choreolib//:__subpackages__"],
@@ -46,6 +46,6 @@ cc_library(
     deps = [] + select({
         "@rules_bzlmodrio_toolchains//conditions:windows": [":shared_interface"],
         "//conditions:default": [],
-    }) + ["@bazelrio_com_choreo_lib_choreolib-cpp_headers//:headers"],
+    }) + ["@bazelrio_choreo_choreolib-cpp_headers//:headers"],
     alwayslink = 1,
 )
