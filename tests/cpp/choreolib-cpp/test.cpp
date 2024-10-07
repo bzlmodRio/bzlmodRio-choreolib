@@ -4,6 +4,7 @@
 #include "gtest/gtest.h"
 
 TEST(BasicTest, Basic) {
-  auto maybeTrajectory = choreo::Choreo::LoadTrajectory<choreo::SwerveSample>("Test");
+  auto maybeTrajectory =
+      choreo::Choreo::LoadTrajectory<choreo::SwerveSample>("Test");
   EXPECT_FALSE(maybeTrajectory);
 }
