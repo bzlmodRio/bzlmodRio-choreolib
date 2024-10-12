@@ -3,8 +3,8 @@ load("@bazel_tools//tools/build_defs/repo:jvm.bzl", "jvm_maven_import_external")
 def __setup_bzlmodrio_choreolib_java_dependencies(mctx):
     jvm_maven_import_external(
         name = "choreo_choreolib_java",
-        artifact = "choreo:ChoreoLib-java:2025.0.0-beta-2",
-        artifact_sha256 = "911bc4fc13d77e9638e4d4c05104127e16f07070a4bf7a6faa4a9bb5abafc146",
+        artifact = "choreo:ChoreoLib-java:2025.0.0-beta-3",
+        artifact_sha256 = "d324bedb53ef20077eedb734c9da67461602882cc3b81c93d7d7389e26228b22",
         server_urls = ["https://SleipnirGroup.github.io/ChoreoLib/dep"],
     )
 
