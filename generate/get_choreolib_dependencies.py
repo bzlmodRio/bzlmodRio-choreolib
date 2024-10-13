@@ -5,6 +5,31 @@ from get_allwpilib_dependencies import get_allwpilib_dependencies
 from bazelrio_gentool.deps.dependency_container import (
     ModuleDependency,
 )
+from bazelrio_gentool.deps.sha256_helper import get_hash
+
+
+def _executable_tool(
+    maven_dep,
+    tool_name,
+    group_id="edu.wpi.first.tools",
+    native_platforms=None,
+    lower_target_name=False,
+):
+    native_platforms = [
+        "Linux-x86_64",
+        "macOS-aarch64",
+        "macOS-x86_64",
+        "Windows-aarch64.exe",
+        "Windows-x86_64.exe",
+    ]
+
+    maven_dep.create_single_file_binary(
+        url_base="https://github.com/SleipnirGroup/Choreo/releases/download",
+        tool_name=tool_name,
+        resources=native_platforms,
+        version=maven_dep.version,
+        fail_on_hash_miss=True,
+    )
 
 
 def get_choreolib_dependencies(
@@ -74,5 +99,8 @@ def get_choreolib_dependencies(
             ("com.google.code.gson:gson", "2.10.1"),
         ],
     )
+
+    _executable_tool(group, tool_name="Choreo-CLI", lower_target_name=True)
+    _executable_tool(group, tool_name="Choreo", lower_target_name=True)
 
     return group
