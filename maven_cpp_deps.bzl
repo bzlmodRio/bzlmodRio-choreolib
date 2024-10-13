@@ -86,74 +86,73 @@ def __setup_bzlmodrio_choreolib_cpp_dependencies(mctx):
     )
     maybe(
         http_file,
-        name = "bazelrio_choreo-cli_Linux-x86_64",
+        name = "bazelrio_choreo-cli_linux-x86_64",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-CLI-v2025.0.0-beta-3-Linux-x86_64",
-        sha256 = "1a8a0ad0693525e5fffe8fa2b63809e187b13caced56de58408ae37a31f72fb3",
         executable = True,
-        # build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
+        sha256 = "1a8a0ad0693525e5fffe8fa2b63809e187b13caced56de58408ae37a31f72fb3",
     )
     maybe(
-        http_archive,
-        name = "bazelrio_choreo-cli_macOS-aarch64",
+        http_file,
+        name = "bazelrio_choreo-cli_macos-aarch64",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-CLI-v2025.0.0-beta-3-macOS-aarch64",
+        executable = True,
         sha256 = "e8dd5a77b1244e89c3e1132d645791d3fb9f3e435fd5acda1972cb09635822c5",
-        build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
     )
     maybe(
-        http_archive,
-        name = "bazelrio_choreo-cli_macOS-x86_64",
+        http_file,
+        name = "bazelrio_choreo-cli_macos-x86_64",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-CLI-v2025.0.0-beta-3-macOS-x86_64",
+        executable = True,
         sha256 = "1ff9042b780f280d3649ab79b68fe0e65671b3702de851cb02d12c912344a571",
-        build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
     )
     maybe(
-        http_archive,
-        name = "bazelrio_choreo-cli_Windows-aarch64.exe",
+        http_file,
+        name = "bazelrio_choreo-cli_windows-aarch64.exe",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-CLI-v2025.0.0-beta-3-Windows-aarch64.exe",
+        executable = True,
         sha256 = "ed122b9c85cfa19c45382a88b27de1d67807fd8bc8bcd86506c9db381683508f",
-        build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
     )
     maybe(
-        http_archive,
-        name = "bazelrio_choreo-cli_Windows-x86_64.exe",
+        http_file,
+        name = "bazelrio_choreo-cli_windows-x86_64.exe",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-CLI-v2025.0.0-beta-3-Windows-x86_64.exe",
+        executable = True,
         sha256 = "c7d70917a489e73a0ecaa935aa285ae8325879de28c3632b97970feab451a6da",
-        build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
     )
     maybe(
-        http_archive,
-        name = "bazelrio_choreo_Linux-x86_64",
+        http_file,
+        name = "bazelrio_choreo_linux-x86_64",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-v2025.0.0-beta-3-Linux-x86_64",
+        executable = True,
         sha256 = "6191f4ed68bc9dc32e665672fe8592c7dd9ac53db022532219b379396b81543e",
-        build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
     )
     maybe(
-        http_archive,
-        name = "bazelrio_choreo_macOS-aarch64",
+        http_file,
+        name = "bazelrio_choreo_macos-aarch64",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-v2025.0.0-beta-3-macOS-aarch64",
+        executable = True,
         sha256 = "18e6eab64fce50ce78dae106c25d9ee193c1f6897e827663bcdeaeb497068ca1",
-        build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
     )
     maybe(
-        http_archive,
-        name = "bazelrio_choreo_macOS-x86_64",
+        http_file,
+        name = "bazelrio_choreo_macos-x86_64",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-v2025.0.0-beta-3-macOS-x86_64",
+        executable = True,
         sha256 = "647575d52ca96000c4ec97b8eb604b4cb1e0d091a728e3307b9c8a305ccff21e",
-        build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
     )
     maybe(
-        http_archive,
-        name = "bazelrio_choreo_Windows-aarch64.exe",
+        http_file,
+        name = "bazelrio_choreo_windows-aarch64.exe",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-v2025.0.0-beta-3-Windows-aarch64.exe",
+        executable = True,
         sha256 = "0b5bd90a914e4a8250101694abc9f06fba1d66dd8e9d0be11d0fa7e8b7746b65",
-        build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
     )
     maybe(
-        http_archive,
-        name = "bazelrio_choreo_Windows-x86_64.exe",
+        http_file,
+        name = "bazelrio_choreo_windows-x86_64.exe",
         url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.0-beta-3/Choreo-v2025.0.0-beta-3-Windows-x86_64.exe",
+        executable = True,
         sha256 = "f286da8a5b1a3d782831a34d0bb00f76b904a99c7c233c05fbb3c20ce924207d",
-        build_file_content = "filegroup(name='all', srcs=glob(['**']), visibility=['//visibility:public'])",
     )
 
 def setup_legacy_bzlmodrio_choreolib_cpp_dependencies():

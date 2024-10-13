@@ -1,6 +1,8 @@
-load("//libraries/tools:tool_launchers.bzl", "executable_tool_launcher")
-
 alias(
     name = "choreo_cli",
-    actual = "@bazelrio_choreo-cli_Linux-x86_64//file:downloaded",
+    actual = select({
+        "@rules_bzlmodrio_toolchains//conditions:linux_x86_64": "@bazelrio_choreo-cli_linux-x86_64//file:downloaded",
+        "@rules_bzlmodrio_toolchains//conditions:osx": "@bazelrio_choreo-cli_macos-x86_64//file:downloaded",
+        "@rules_bzlmodrio_toolchains//conditions:windows": "@bazelrio_choreo-cli_windows-x86_64//file:downloaded",
+    }),
 )

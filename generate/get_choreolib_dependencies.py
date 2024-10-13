@@ -7,28 +7,6 @@ from bazelrio_gentool.deps.dependency_container import (
 )
 from bazelrio_gentool.deps.sha256_helper import get_hash
 
-class ChoreoExeTool:
-    def __init__(self, tool_name, version, resources):
-        self.resources = resources
-        self.tool_name = tool_name
-        self.version = version
-        self.fail_on_hash_miss = True
-
-    def get_archive_name(self, suffix=""):
-        group_underscore = self.tool_name.replace(".", "_").lower()
-        archive_name = f"bazelrio_{group_underscore}"
-        if suffix:
-            archive_name += f"_{suffix}"
-
-        return archive_name
-
-    def get_url(self, resource):
-        return f"https://github.com/SleipnirGroup/Choreo/releases/download/v{self.version}/{self.tool_name}-v{self.version}-{resource}"
-        
-    def get_sha256(self, resource):
-        return get_hash(self.get_url(resource), self.fail_on_hash_miss)
-
-
 def _executable_tool(
     maven_dep,
     tool_name,
@@ -44,12 +22,12 @@ def _executable_tool(
         "Windows-x86_64.exe",
     ]
 
-    maven_dep.executable_tools.append(
-        ChoreoExeTool(
-            tool_name = tool_name,
-            resources=native_platforms,
-            version=maven_dep.version,
-        )
+    
+    maven_dep.create_single_file_binary(
+        url_base = "https://github.com/SleipnirGroup/Choreo/releases/download",
+        tool_name = tool_name,
+        resources=native_platforms,
+        version=maven_dep.version,
     )
 
 

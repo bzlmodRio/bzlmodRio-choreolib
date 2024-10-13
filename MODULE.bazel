@@ -32,14 +32,11 @@ use_repo(
 setup_bzlmodrio_choreolib_cpp_dependencies = use_extension("//:maven_cpp_deps.bzl", "setup_bzlmodrio_choreolib_cpp_dependencies")
 use_repo(
     setup_bzlmodrio_choreolib_cpp_dependencies,
-    "bazelrio_choreo-cli_Linux-x86_64",
-    "bazelrio_choreo-cli_Windows-aarch64.exe",
-    "bazelrio_choreo-cli_Windows-x86_64.exe",
-    "bazelrio_choreo-cli_macOS-aarch64",
-    "bazelrio_choreo-cli_macOS-x86_64",
-    "bazelrio_choreo_Linux-x86_64",
-    "bazelrio_choreo_Windows-aarch64.exe",
-    "bazelrio_choreo_Windows-x86_64.exe",
+    "bazelrio_choreo-cli_linux-x86_64",
+    "bazelrio_choreo-cli_macos-aarch64",
+    "bazelrio_choreo-cli_macos-x86_64",
+    "bazelrio_choreo-cli_windows-aarch64.exe",
+    "bazelrio_choreo-cli_windows-x86_64.exe",
     "bazelrio_choreo_choreolib-cpp_headers",
     "bazelrio_choreo_choreolib-cpp_linuxarm32",
     "bazelrio_choreo_choreolib-cpp_linuxarm64",
@@ -47,8 +44,11 @@ use_repo(
     "bazelrio_choreo_choreolib-cpp_linuxx86-64",
     "bazelrio_choreo_choreolib-cpp_osxuniversal",
     "bazelrio_choreo_choreolib-cpp_windowsx86-64",
-    "bazelrio_choreo_macOS-aarch64",
-    "bazelrio_choreo_macOS-x86_64",
+    "bazelrio_choreo_linux-x86_64",
+    "bazelrio_choreo_macos-aarch64",
+    "bazelrio_choreo_macos-x86_64",
+    "bazelrio_choreo_windows-aarch64.exe",
+    "bazelrio_choreo_windows-x86_64.exe",
 )
 
 setup_bzlmodrio_choreolib_java_dependencies = use_extension("//:maven_java_deps.bzl", "setup_bzlmodrio_choreolib_java_dependencies")
