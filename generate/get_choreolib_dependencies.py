@@ -28,6 +28,7 @@ def _executable_tool(
         tool_name = tool_name,
         resources=native_platforms,
         version=maven_dep.version,
+        fail_on_hash_miss = True
     )
 
 
