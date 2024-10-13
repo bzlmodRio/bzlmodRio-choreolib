@@ -7,6 +7,7 @@ from bazelrio_gentool.deps.dependency_container import (
 )
 from bazelrio_gentool.deps.sha256_helper import get_hash
 
+
 def _executable_tool(
     maven_dep,
     tool_name,
@@ -22,13 +23,12 @@ def _executable_tool(
         "Windows-x86_64.exe",
     ]
 
-    
     maven_dep.create_single_file_binary(
-        url_base = "https://github.com/SleipnirGroup/Choreo/releases/download",
-        tool_name = tool_name,
+        url_base="https://github.com/SleipnirGroup/Choreo/releases/download",
+        tool_name=tool_name,
         resources=native_platforms,
         version=maven_dep.version,
-        fail_on_hash_miss = True
+        fail_on_hash_miss=True,
     )
 
 

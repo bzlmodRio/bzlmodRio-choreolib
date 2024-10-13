@@ -42,7 +42,7 @@ def main():
         include_bullseye_compiler=False,
     )
     generate_meta_deps(output_dir, group, force_tests=args.force_tests)
-    
+
     for exe_tool in group.single_file_binaries:
         template_base = os.path.join(
             TEMPLATE_BASE_DIR, "library_wrapper", "libraries", "single_file_binary"
