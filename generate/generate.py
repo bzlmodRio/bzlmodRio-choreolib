@@ -43,18 +43,22 @@ def main():
     )
     generate_meta_deps(output_dir, group, force_tests=args.force_tests)
 
-    for exe_tool in group.single_file_binaries:
-        template_base = os.path.join(
-            TEMPLATE_BASE_DIR, "library_wrapper", "libraries", "single_file_binary"
-        )
-        lib_dir = os.path.join(output_dir, "tools", exe_tool.tool_name)
-        # test_dir = os.path.join(base_output_directory, "..", "tests", "tools", exe_tool.artifact_name)
+    for exe_tool in group.bundled_executable_tools:
+        for child_tool in exe_tool.children_tools:
+            template_base = os.path.join(
+                TEMPLATE_BASE_DIR,
+                "library_wrapper",
+                "libraries",
+                "bundled_executable_tools",
+            )
+            lib_dir = os.path.join(output_dir, "tools", child_tool)
 
-        # Write BUILD file
-        template_file = os.path.join(template_base, "BUILD.bazel.jinja2")
-        output_file = os.path.join(lib_dir, "BUILD")
-        print(template_file, output_file)
-        render_template(template_file, output_file, target=exe_tool)
+            # Write BUILD file
+            template_file = os.path.join(template_base, "BUILD.bazel.jinja2")
+            output_file = os.path.join(lib_dir, "BUILD")
+            render_template(
+                template_file, output_file, target=exe_tool, child_tool=child_tool
+            )
 
     manual_cleanup(REPO_DIR)
 
