@@ -16,18 +16,19 @@ def _executable_tool(
     lower_target_name=False,
 ):
     native_platforms = [
-        "Linux-x86_64",
-        "macOS-aarch64",
-        "macOS-x86_64",
-        "Windows-aarch64.exe",
-        "Windows-x86_64.exe",
+        "Linux-x86_64-standalone",
+        "macOS-aarch64-standalone",
+        "macOS-x86_64-standalone",
+        "Windows-aarch64-standalone",
+        "Windows-x86_64-standalone",
     ]
 
-    maven_dep.create_single_file_binary(
+    maven_dep.create_bundled_executable_tools(
         url_base="https://github.com/SleipnirGroup/Choreo/releases/download",
         tool_name=tool_name,
         resources=native_platforms,
         version=maven_dep.version,
+        children_tools=["choreo", "choreo-cli"],
         fail_on_hash_miss=True,
     )
 
@@ -36,9 +37,9 @@ def get_choreolib_dependencies(
     use_local_allwpilib=False,
     use_local_opencv=False,
     use_local_ni=True,
-    allwpilib_version_override="2024.1.1",
+    allwpilib_version_override="2025.1.1-beta-1",
     opencv_version_override="2024.4.8.0-4.bcr1",
-    ni_version_override="2024.2.1.bcr1",
+    ni_version_override="2025.0.0",
 ):
     SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 
@@ -100,7 +101,6 @@ def get_choreolib_dependencies(
         ],
     )
 
-    _executable_tool(group, tool_name="Choreo-CLI", lower_target_name=True)
     _executable_tool(group, tool_name="Choreo", lower_target_name=True)
 
     return group
