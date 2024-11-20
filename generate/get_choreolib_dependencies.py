@@ -1,11 +1,8 @@
 import os
 
+from bazelrio_gentool.deps.dependency_container import ModuleDependency
 from bazelrio_gentool.load_vendordep_dependency import vendordep_dependency
 from get_allwpilib_dependencies import get_allwpilib_dependencies
-from bazelrio_gentool.deps.dependency_container import (
-    ModuleDependency,
-)
-from bazelrio_gentool.deps.sha256_helper import get_hash
 
 
 def _executable_tool(
