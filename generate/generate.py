@@ -1,16 +1,16 @@
+import argparse
 import os
 
-from get_choreolib_dependencies import get_choreolib_dependencies
-from bazelrio_gentool.generate_group import generate_meta_deps
-from bazelrio_gentool.generate_module_project_files import generate_module_project_files
 from bazelrio_gentool.clean_existing_version import clean_existing_version
+from bazelrio_gentool.cli import GenericCliArgs, add_generic_cli
+from bazelrio_gentool.generate_group import generate_meta_deps
 from bazelrio_gentool.generate_module_project_files import (
     create_default_mandatory_settings,
+    generate_module_project_files,
 )
-from bazelrio_gentool.cli import add_generic_cli, GenericCliArgs
 from bazelrio_gentool.manual_cleanup_helper import manual_cleanup_helper
 from bazelrio_gentool.utils import TEMPLATE_BASE_DIR, render_template
-import argparse
+from get_choreolib_dependencies import get_choreolib_dependencies
 
 
 def main():
