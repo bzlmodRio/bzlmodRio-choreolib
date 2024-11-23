@@ -26,28 +26,28 @@ def __setup_bzlmodrio_choreolib_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_headers",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-headers.zip",
+        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-headers.zip",
         sha256 = "4de9d2096a1705caae3a382dbcd7baa3bc063134f6c13a915c4f041faf5d7355",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_windowsx86-64",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-windowsx86-64.zip",
+        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-windowsx86-64.zip",
         sha256 = "b9ad696081fa55dc4ec131e935257675a67809daf00ee4ee616202d6a3f2ec24",
         build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_linuxx86-64",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-linuxx86-64.zip",
+        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-linuxx86-64.zip",
         sha256 = "91509454ceadeca341d0c454f8efec5bf0e9a36e5c5620285ed33016184fb96f",
         build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_osxuniversal",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-osxuniversal.zip",
+        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-osxuniversal.zip",
         sha256 = "76ab069f55ab5994376a10c96ef410499b538498b8698fc51be17fc2e3f83239",
         build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
         patch_cmds = [
@@ -66,21 +66,21 @@ def __setup_bzlmodrio_choreolib_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_linuxathena",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-linuxathena.zip",
+        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-linuxathena.zip",
         sha256 = "b0b4a40feef38ff8616f27356cc474a65065f9752c8a9b4dc82b2801bf77a6b2",
         build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_linuxarm32",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-linuxarm32.zip",
+        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-linuxarm32.zip",
         sha256 = "0b807d3b5d886fbc8da7248556c79f1c40785a7a2efc3cea3ce188a13bdcaa9c",
         build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_linuxarm64",
-        url = "https://SleipnirGroup.github.io/ChoreoLib/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-linuxarm64.zip",
+        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.0-beta-6/ChoreoLib-cpp-2025.0.0-beta-6-linuxarm64.zip",
         sha256 = "f50598e35ea2a446fd1a5b42e7ca5d1c10fa6116561b7ca285854de083d93193",
         build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
     )
