@@ -21,7 +21,7 @@ maven.install(
     repositories = [
         "https://repo1.maven.org/maven2",
         "https://frcmaven.wpi.edu/release",
-        "https://SleipnirGroup.github.io/ChoreoLib/dep",
+        "https://lib.choreo.autos/dep",
     ],
 )
 use_repo(
