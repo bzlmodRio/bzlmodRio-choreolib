@@ -13,10 +13,6 @@ cc_library(
     }),
     linkstatic = True,
     tags = ["manual"],
-    target_compatible_with = select({
-        "@rules_bzlmodrio_toolchains//constraints/is_raspi32:raspi32": ["@platforms//:incompatible"],
-        "//conditions:default": [],
-    }),
     visibility = ["@bzlmodrio-choreolib//:__subpackages__"],
     deps = ["@bazelrio_choreo_choreolib-cpp_headers//:headers"],
 )
@@ -27,8 +23,8 @@ filegroup(
         "@rules_bzlmodrio_toolchains//conditions:linux_x86_64": ["@bazelrio_choreo_choreolib-cpp_linuxx86-64//:shared"],
         "@rules_bzlmodrio_toolchains//conditions:osx": ["@bazelrio_choreo_choreolib-cpp_osxuniversal//:shared"],
         "@rules_bzlmodrio_toolchains//conditions:windows": ["@bazelrio_choreo_choreolib-cpp_windowsx86-64//:shared"],
-        "@rules_bzlmodrio_toolchains//constraints/is_bookworm32:bookworm32": ["@bazelrio_choreo_choreolib-cpp_linuxarm32//:shared"],
         "@rules_bzlmodrio_toolchains//constraints/is_bookworm64:bookworm64": ["@bazelrio_choreo_choreolib-cpp_linuxarm64//:shared"],
+        "@rules_bzlmodrio_toolchains//constraints/is_raspibookworm32:raspibookworm32": ["@bazelrio_choreo_choreolib-cpp_linuxarm32//:shared"],
         "@rules_bzlmodrio_toolchains//constraints/is_roborio:roborio": ["@bazelrio_choreo_choreolib-cpp_linuxathena//:shared"],
         "//conditions:default": [],
     }),
@@ -38,10 +34,6 @@ filegroup(
 cc_library(
     name = "shared",
     srcs = [":shared_raw"],
-    target_compatible_with = select({
-        "@rules_bzlmodrio_toolchains//constraints/is_raspi32:raspi32": ["@platforms//:incompatible"],
-        "//conditions:default": [],
-    }),
     visibility = ["@bzlmodrio-choreolib//:__subpackages__"],
     deps = [] + select({
         "@rules_bzlmodrio_toolchains//conditions:windows": [":shared_interface"],
