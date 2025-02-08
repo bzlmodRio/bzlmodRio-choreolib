@@ -4532,8 +4532,8 @@
     },
     "@@bzlmodrio-choreolib~//:maven_cpp_deps.bzl%setup_bzlmodrio_choreolib_cpp_dependencies": {
       "general": {
-        "bzlTransitiveDigest": "2L6rs4j9XTSfMZgJ6MR4wJhOMPxavOj/MqAdLcnxAfE=",
-        "usagesDigest": "N994ta5LF0ejhEjrFnb2XQmM6qkDD4pOC4HBpPpIKL8=",
+        "bzlTransitiveDigest": "M764ifEaHvPjzjOfqzv2YFoc7909kQp6FUOlEfkEQ6U=",
+        "usagesDigest": "8vuffE2/z2X37GY/7pf2YPyQpzqMGQw/EMLXo96esA4=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -4542,8 +4542,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.2/ChoreoLib-cpp-2025.0.2-headers.zip",
-              "sha256": "493f3df4ccbf70dd6837c831c79ac22b3198f06648e3e618c93a0cf1f562e581",
+              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-headers.zip",
+              "sha256": "2f2e67b361445d352fcdeb6a0b273c6df45d76f2c174a5d8f3ec92bdf1ae7de6",
               "build_file_content": "cc_library(\n    name = \"headers\",\n    hdrs = glob([\"**\"]),\n    includes = [\".\"],\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"header_files\",\n    srcs = glob([\"**\"]),\n    visibility = [\"//visibility:public\"],\n)\n"
             }
           },
@@ -4551,8 +4551,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.2/ChoreoLib-cpp-2025.0.2-windowsx86-64.zip",
-              "sha256": "e0a9acfea4b86b341affeb4b838ffde1d916d6d9c8af5f189bd7029d75465356",
+              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-windowsx86-64.zip",
+              "sha256": "5c59b8f673c3d54ffbf07ee4b9047483f05a10ba2e8d77a6c0db7dd3b2774a2f",
               "build_file": "@@bzlmodrio-choreolib~//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
@@ -4560,8 +4560,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.2/Choreo-v2025.0.2-Windows-aarch64-standalone.zip",
-              "sha256": "e2923b1a9e94b1b87cbceeb76c4b89a797312944cee09bc8eedfa8fc15feac5c",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-Windows-aarch64-standalone.zip",
+              "sha256": "1edbb340b8eb8ae0f9b70acc9baaa4e796e96c859a51fc4cf890263f62335a74",
               "build_file_content": "exports_files([\"choreo.exe\", \"choreo-cli.exe\", ])"
             }
           },
@@ -4569,8 +4569,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.2/Choreo-v2025.0.2-Windows-x86_64-standalone.zip",
-              "sha256": "e097a9c3afb5f7296317e8880e7e500f84eff45ac43b0170e0ffd4f5be313674",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-Windows-x86_64-standalone.zip",
+              "sha256": "4ec5e4c0f2d163a042f1e392cf0c15cdcff80bab2ac0afe21923604ac9ded39b",
               "build_file_content": "exports_files([\"choreo.exe\", \"choreo-cli.exe\", ])"
             }
           },
@@ -4578,8 +4578,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.2/ChoreoLib-cpp-2025.0.2-linuxathena.zip",
-              "sha256": "a920db4113a8d6458afc43e014e68bfb1ae022849703b8bdfdc33b6d243bd5f2",
+              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-linuxathena.zip",
+              "sha256": "25f4669aa68ba00f97a2d2a3be24c05488e52bb30ed75f7f5bb80540472fb09c",
               "build_file": "@@bzlmodrio-choreolib~//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
@@ -4587,8 +4587,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.2/ChoreoLib-cpp-2025.0.2-linuxarm32.zip",
-              "sha256": "fab679b3ebaeb860cc9f8047263c7c12c0ebb96797c90c4ff7c1d584f40ca6d1",
+              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-linuxarm32.zip",
+              "sha256": "2bbdfdabc8636116b17693196ddf6dc73253d90ee544c1e132dfacd7c848f433",
               "build_file": "@@bzlmodrio-choreolib~//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
@@ -4596,8 +4596,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.2/ChoreoLib-cpp-2025.0.2-linuxx86-64.zip",
-              "sha256": "042ebc25f9924083a32ef0e2b0341dd637ac274607633e6d1f35deee8e434343",
+              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-linuxx86-64.zip",
+              "sha256": "4329629d4f537ba7a3307aeb19f63b0dcb711f0b9e814b0afcc3722dd48e792f",
               "build_file": "@@bzlmodrio-choreolib~//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
@@ -4605,8 +4605,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.2/ChoreoLib-cpp-2025.0.2-linuxarm64.zip",
-              "sha256": "04c17f2c3f88987410074442f6d1f01b86aa365063d38672ba5829b523ae57f2",
+              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-linuxarm64.zip",
+              "sha256": "bf4a9a21de547127a639875961ef41f3f9fc8ee13379895c1313d5f2440195a2",
               "build_file": "@@bzlmodrio-choreolib~//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
@@ -4614,8 +4614,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.2/ChoreoLib-cpp-2025.0.2-osxuniversal.zip",
-              "sha256": "9efb0eba8526050c625af6e26b79f9b25446cc567f2e7dc1e03a9a1a7ea7b713",
+              "url": "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-osxuniversal.zip",
+              "sha256": "64edf7ec2640907fd07fe1c06f92b6037f6d283842d1a4e10684a8d71da9d603",
               "build_file": "@@bzlmodrio-choreolib~//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
               "patch_cmds": [
                 "install_name_tool -id @rpath/libChoreoLib.dylib osx/universal/shared/libChoreoLib.dylib",
@@ -4635,8 +4635,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.2/Choreo-v2025.0.2-Linux-x86_64-standalone.zip",
-              "sha256": "cfeff35a3e265c16337968304e1136a4acc3bcd923e146282b6dc763df578c45",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-Linux-x86_64-standalone.zip",
+              "sha256": "b01ede9f9b0f1097c34412fc0982c22de4d7629e3a9f72baa971b8c3fc356992",
               "build_file_content": "exports_files([\"choreo\", \"choreo-cli\", ])"
             }
           },
@@ -4644,8 +4644,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.2/Choreo-v2025.0.2-macOS-x86_64-standalone.zip",
-              "sha256": "45bbd3887af66db9a715af9730d916a80192c5326528715cc19d9e32db25d9cd",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-macOS-x86_64-standalone.zip",
+              "sha256": "34836344cded7e22226c1be2d4579a4d89de038466c88be1c8f366f9b1dca0f6",
               "build_file_content": "exports_files([\"choreo\", \"choreo-cli\", ])"
             }
           },
@@ -4653,8 +4653,8 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.2/Choreo-v2025.0.2-macOS-aarch64-standalone.zip",
-              "sha256": "6a29b0e45f043f7f432c9f60945e5c45707ed7f5f1fe20614882cf1d0a57c198",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-macOS-aarch64-standalone.zip",
+              "sha256": "fdfe116d802a71bac78dbfa4c679629b37dc3d8064245d8ab20a8f9e061f7107",
               "build_file_content": "exports_files([\"choreo\", \"choreo-cli\", ])"
             }
           }
@@ -4670,8 +4670,8 @@
     },
     "@@bzlmodrio-choreolib~//:maven_java_deps.bzl%setup_bzlmodrio_choreolib_java_dependencies": {
       "general": {
-        "bzlTransitiveDigest": "+0ea9pS1mymvGr0u/FAaBFfJexbEqkZP83omMMtGwEY=",
-        "usagesDigest": "BmlQ6g9cOHrnTReboXN75o6nFFGIOlOEHKoNYoz3Pmc=",
+        "bzlTransitiveDigest": "VJOoS+4+vuA+F5q951YRTbAEZEH2ZOCm6mTqvYLMYLo=",
+        "usagesDigest": "JNj+9G3mdFLMD0E8F0fND0qdLacFDQZsFpjVaA3ds88=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -4682,15 +4682,15 @@
             "attributes": {
               "generated_rule_name": "choreo_choreolib_java",
               "artifact_urls": [
-                "https://lib.choreo.autos/dep/choreo/ChoreoLib-java/2025.0.2/ChoreoLib-java-2025.0.2.jar"
+                "https://lib.choreo.autos/dep/choreo/ChoreoLib-java/2025.0.3/ChoreoLib-java-2025.0.3.jar"
               ],
               "srcjar_urls": [],
-              "canonical_id": "choreo:ChoreoLib-java:2025.0.2",
+              "canonical_id": "choreo:ChoreoLib-java:2025.0.3",
               "rule_name": "java_import",
               "tags": [
-                "maven_coordinates=choreo:ChoreoLib-java:2025.0.2"
+                "maven_coordinates=choreo:ChoreoLib-java:2025.0.3"
               ],
-              "artifact_sha256": "8f9c8dbf8e9c106f59c25f393fa330d07a97ad313d425863dbf8276136ffae81"
+              "artifact_sha256": "3bfeb03bbb521220e44352d0eb29078da5127c1a752c325a38fe05081391f00a"
             }
           }
         },
@@ -5441,7 +5441,7 @@
     "@@rules_jvm_external~//:extensions.bzl%maven": {
       "general": {
         "bzlTransitiveDigest": "Pq3YnJEflPAALx/UMykUnN3aA5bve0fNm/cuLvt/zvI=",
-        "usagesDigest": "69wc0xJOE1hcx4cg68pFPgd17G0R4D8dDmMrwUUhjYQ=",
+        "usagesDigest": "Aizr+YJKHdmCIH5/RLZcW3ggx6/sA9/W08Zdgb/EfaE=",
         "recordedFileInputs": {
           "@@rules_spotless~//rules_spotless_dependencies_install.json": "7e9ef00f567eb9f2b5b48b2a024557e3f6cd00feb2fc95283118b01196eed54e",
           "@@rules_checkstyle~//rules_checkstyle_dependencies_install.json": "a9352374d7ae2e59f0ee999a3888f51a6b34c57f410140024c34aa166815d34b",
