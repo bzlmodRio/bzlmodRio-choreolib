@@ -1,7 +1,7 @@
 module(
     name = "bzlmodrio-choreolib",
-    version = "2026.0.0-beta-1",
-    compatibility_level = 2026,
+    version = "2025.0.3",
+    compatibility_level = 2025,
 )
 
 bazel_dep(name = "platforms", version = "0.0.11")
@@ -22,7 +22,7 @@ maven.install(
     repositories = [
         "https://repo1.maven.org/maven2",
         "https://frcmaven.wpi.edu/release",
-        "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release",
+        "https://lib.choreo.autos/dep",
     ],
 )
 use_repo(
@@ -34,6 +34,9 @@ setup_bzlmodrio_choreolib_cpp_dependencies = use_extension("//:maven_cpp_deps.bz
 use_repo(
     setup_bzlmodrio_choreolib_cpp_dependencies,
     "bazelrio_choreo_choreolib-cpp_headers",
+    "bazelrio_choreo_choreolib-cpp_linuxarm32",
+    "bazelrio_choreo_choreolib-cpp_linuxarm64",
+    "bazelrio_choreo_choreolib-cpp_linuxathena",
     "bazelrio_choreo_choreolib-cpp_linuxx86-64",
     "bazelrio_choreo_choreolib-cpp_osxuniversal",
     "bazelrio_choreo_choreolib-cpp_windowsx86-64",
