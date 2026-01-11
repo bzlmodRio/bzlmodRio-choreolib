@@ -26,29 +26,29 @@ def __setup_bzlmodrio_choreolib_cpp_dependencies(mctx):
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_headers",
-        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-headers.zip",
-        sha256 = "2f2e67b361445d352fcdeb6a0b273c6df45d76f2c174a5d8f3ec92bdf1ae7de6",
+        url = "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.0-beta-1/ChoreoLib-cpp-2026.0.0-beta-1-headers.zip",
+        sha256 = "7fe10e31c59f1f667f417583b5df0e167a43f452c0fc2ed33d983632aed8f737",
         build_file_content = cc_library_headers,
     )
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_windowsx86-64",
-        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-windowsx86-64.zip",
-        sha256 = "5c59b8f673c3d54ffbf07ee4b9047483f05a10ba2e8d77a6c0db7dd3b2774a2f",
+        url = "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.0-beta-1/ChoreoLib-cpp-2026.0.0-beta-1-windowsx86-64.zip",
+        sha256 = "1ce1ab8d9f35195dc27752724770ab3630e39d2132bd9a9b5ac56b12cc3b5a79",
         build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_linuxx86-64",
-        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-linuxx86-64.zip",
-        sha256 = "4329629d4f537ba7a3307aeb19f63b0dcb711f0b9e814b0afcc3722dd48e792f",
+        url = "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.0-beta-1/ChoreoLib-cpp-2026.0.0-beta-1-linuxx86-64.zip",
+        sha256 = "a106c0dd5366c7600be71045f0b15da69ddaf67d39d6c0d527bc55f6b82f688b",
         build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
     )
     maybe(
         http_archive,
         "bazelrio_choreo_choreolib-cpp_osxuniversal",
-        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-osxuniversal.zip",
-        sha256 = "64edf7ec2640907fd07fe1c06f92b6037f6d283842d1a4e10684a8d71da9d603",
+        url = "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.0-beta-1/ChoreoLib-cpp-2026.0.0-beta-1-osxuniversal.zip",
+        sha256 = "f56a81c01748e3c1742664e268bf6488e0a277a91230d10f877f8e2d25c23c6f",
         build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
         patch_cmds = [
             "install_name_tool -id @rpath/libChoreoLib.dylib osx/universal/shared/libChoreoLib.dylib",
@@ -65,58 +65,37 @@ def __setup_bzlmodrio_choreolib_cpp_dependencies(mctx):
     )
     maybe(
         http_archive,
-        "bazelrio_choreo_choreolib-cpp_linuxathena",
-        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-linuxathena.zip",
-        sha256 = "25f4669aa68ba00f97a2d2a3be24c05488e52bb30ed75f7f5bb80540472fb09c",
-        build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
-    )
-    maybe(
-        http_archive,
-        "bazelrio_choreo_choreolib-cpp_linuxarm32",
-        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-linuxarm32.zip",
-        sha256 = "2bbdfdabc8636116b17693196ddf6dc73253d90ee544c1e132dfacd7c848f433",
-        build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
-    )
-    maybe(
-        http_archive,
-        "bazelrio_choreo_choreolib-cpp_linuxarm64",
-        url = "https://lib.choreo.autos/dep/choreo/ChoreoLib-cpp/2025.0.3/ChoreoLib-cpp-2025.0.3-linuxarm64.zip",
-        sha256 = "bf4a9a21de547127a639875961ef41f3f9fc8ee13379895c1313d5f2440195a2",
-        build_file = "@bzlmodrio-choreolib//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
-    )
-    maybe(
-        http_archive,
         name = "bazelrio_choreo_linux-x86_64-standalone",
-        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-Linux-x86_64-standalone.zip",
-        sha256 = "b01ede9f9b0f1097c34412fc0982c22de4d7629e3a9f72baa971b8c3fc356992",
+        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.0-beta-1/Choreo-v2026.0.0-beta-1-Linux-x86_64-standalone.zip",
+        sha256 = "3569f0343eb75329efb20d949320118c2ae121212adb37191aac3d76605ac0c9",
         build_file_content = """exports_files(["choreo", "choreo-cli", ])""",
     )
     maybe(
         http_archive,
         name = "bazelrio_choreo_macos-aarch64-standalone",
-        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-macOS-aarch64-standalone.zip",
-        sha256 = "fdfe116d802a71bac78dbfa4c679629b37dc3d8064245d8ab20a8f9e061f7107",
+        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.0-beta-1/Choreo-v2026.0.0-beta-1-macOS-aarch64-standalone.zip",
+        sha256 = "31401e2534f033c9c44a4324ffb15cee3a1bae2e1b33927dbc31a4fdd2f0984e",
         build_file_content = """exports_files(["choreo", "choreo-cli", ])""",
     )
     maybe(
         http_archive,
         name = "bazelrio_choreo_macos-x86_64-standalone",
-        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-macOS-x86_64-standalone.zip",
-        sha256 = "34836344cded7e22226c1be2d4579a4d89de038466c88be1c8f366f9b1dca0f6",
+        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.0-beta-1/Choreo-v2026.0.0-beta-1-macOS-x86_64-standalone.zip",
+        sha256 = "ea7d968f3805db503212a6cdfd904521ff56356d8d82352744f2dcb956c7e7d1",
         build_file_content = """exports_files(["choreo", "choreo-cli", ])""",
     )
     maybe(
         http_archive,
         name = "bazelrio_choreo_windows-aarch64-standalone",
-        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-Windows-aarch64-standalone.zip",
-        sha256 = "1edbb340b8eb8ae0f9b70acc9baaa4e796e96c859a51fc4cf890263f62335a74",
+        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.0-beta-1/Choreo-v2026.0.0-beta-1-Windows-aarch64-standalone.zip",
+        sha256 = "3d9393a9af4cef09bbc8eedd44bc3858e772245427ca2e6d07ba980f41b4f8ce",
         build_file_content = """exports_files(["choreo.exe", "choreo-cli.exe", ])""",
     )
     maybe(
         http_archive,
         name = "bazelrio_choreo_windows-x86_64-standalone",
-        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2025.0.3/Choreo-v2025.0.3-Windows-x86_64-standalone.zip",
-        sha256 = "4ec5e4c0f2d163a042f1e392cf0c15cdcff80bab2ac0afe21923604ac9ded39b",
+        url = "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.0-beta-1/Choreo-v2026.0.0-beta-1-Windows-x86_64-standalone.zip",
+        sha256 = "709f7d8725bea357a52fca0d80cfc4e463200a4c04bcd62ec9b8ab5b8df24e84",
         build_file_content = """exports_files(["choreo.exe", "choreo-cli.exe", ])""",
     )
 
