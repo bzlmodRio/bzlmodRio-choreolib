@@ -3,9 +3,9 @@ load("@bazel_tools//tools/build_defs/repo:jvm.bzl", "jvm_maven_import_external")
 def __setup_bzlmodrio_choreolib_java_dependencies(mctx):
     jvm_maven_import_external(
         name = "choreo_choreolib_java",
-        artifact = "choreo:ChoreoLib-java:2026.0.0",
-        artifact_sha256 = "b4f5bdfba78635c9f3c84a00e5e2c2ea2d54a461a0edf5fa944b783bc3a15cb8",
-        server_urls = ["https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release"],
+        artifact = "choreo:ChoreoLib-java:2025.0.3",
+        artifact_sha256 = "3bfeb03bbb521220e44352d0eb29078da5127c1a752c325a38fe05081391f00a",
+        server_urls = ["https://lib.choreo.autos/dep"],
     )
 
 def setup_legacy_bzlmodrio_choreolib_java_dependencies():
@@ -22,7 +22,7 @@ def get_bzlmodrio_choreolib_java_dependencies():
     repositories = [
         "https://repo1.maven.org/maven2",
         "https://frcmaven.wpi.edu/release",
-        "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release",
+        "https://lib.choreo.autos/dep",
     ]
 
     return artifacts, repositories
