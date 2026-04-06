@@ -4710,8 +4710,8 @@
     },
     "@@bzlmodrio-choreolib+//:maven_cpp_deps.bzl%setup_bzlmodrio_choreolib_cpp_dependencies": {
       "general": {
-        "bzlTransitiveDigest": "vcOb2io4rs0tGdayU3nHKwwO61GnniVOJxxQi4VerDk=",
-        "usagesDigest": "iJkyD6ZBlmw68HumadHoiUb/+SlPdmUGIXZsIExJD+Y=",
+        "bzlTransitiveDigest": "E9TdHqMHakhJnfjOFBlyycXNDI1767XNMmeNmO8x7zc=",
+        "usagesDigest": "J+wn7TNAZJWb4C06FkbyPMa8eChTqqu289VAHQsdqEA=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -4719,32 +4719,32 @@
           "bazelrio_choreo_choreolib-cpp_headers": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.2/ChoreoLib-cpp-2026.0.2-headers.zip",
-              "sha256": "748411d1f482b9dde02685d0edfba7e0f8796777de5817d72d3d92a522c4ddbb",
+              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.3/ChoreoLib-cpp-2026.0.3-headers.zip",
+              "sha256": "f7b5d92ab13a6770c43ffb488c6ec452e5894401fc4159889284df240c305f7f",
               "build_file_content": "cc_library(\n    name = \"headers\",\n    hdrs = glob([\"**\"]),\n    includes = [\".\"],\n    visibility = [\"//visibility:public\"],\n)\n\nfilegroup(\n    name = \"header_files\",\n    srcs = glob([\"**\"]),\n    visibility = [\"//visibility:public\"],\n)\n"
             }
           },
           "bazelrio_choreo_choreolib-cpp_windowsx86-64": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.2/ChoreoLib-cpp-2026.0.2-windowsx86-64.zip",
-              "sha256": "a13d37c6a8042e5dcf2068634953d2c80e8024040083c1b02a80fc485e17bda6",
+              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.3/ChoreoLib-cpp-2026.0.3-windowsx86-64.zip",
+              "sha256": "b8aa7c4fcb3762f37f0fd1c16bc108f89f781736b63c6540a83a4779c42e2b15",
               "build_file": "@@bzlmodrio-choreolib+//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
           "bazelrio_choreo_choreolib-cpp_linuxx86-64": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.2/ChoreoLib-cpp-2026.0.2-linuxx86-64.zip",
-              "sha256": "840f85502a569e772c28bff5885ac4eeadbd4cbb8fdfab2dbe9ad88191727519",
+              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.3/ChoreoLib-cpp-2026.0.3-linuxx86-64.zip",
+              "sha256": "95d28f48a2393119bd0e516ae0baec148fd928114a67d81028d1bbe0a3026772",
               "build_file": "@@bzlmodrio-choreolib+//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
           "bazelrio_choreo_choreolib-cpp_osxuniversal": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.2/ChoreoLib-cpp-2026.0.2-osxuniversal.zip",
-              "sha256": "43257f431693a933706b27a1b60c20da3abe7500fcd394323dac3c23a55a28f3",
+              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.3/ChoreoLib-cpp-2026.0.3-osxuniversal.zip",
+              "sha256": "b9fce7a8a29b154862c6e2ecce3e501737f2b261ab3a97a07ac1add92deafb2c",
               "build_file": "@@bzlmodrio-choreolib+//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel",
               "patch_cmds": [
                 "install_name_tool -id @rpath/libChoreoLib.dylib osx/universal/shared/libChoreoLib.dylib",
@@ -4763,64 +4763,64 @@
           "bazelrio_choreo_choreolib-cpp_linuxathena": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.2/ChoreoLib-cpp-2026.0.2-linuxathena.zip",
-              "sha256": "4b97d568c2a118091c66f3f7a6f9a07342be5c16749be2f0685381b99952cde5",
+              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.3/ChoreoLib-cpp-2026.0.3-linuxathena.zip",
+              "sha256": "e08139e13c12aa7f3c27ef2d63eaf63e0743ebae1da2ba0efef45d16004939b1",
               "build_file": "@@bzlmodrio-choreolib+//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
           "bazelrio_choreo_choreolib-cpp_linuxarm32": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.2/ChoreoLib-cpp-2026.0.2-linuxarm32.zip",
-              "sha256": "037d2b2af55210d2e777a237a4ed81bb1f6828570bbfa6e2d3c7594ed11db4d1",
+              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.3/ChoreoLib-cpp-2026.0.3-linuxarm32.zip",
+              "sha256": "7d181c6286a24fc1f939ba1eb228598fa3545698725d4dece5c332c38812a291",
               "build_file": "@@bzlmodrio-choreolib+//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
           "bazelrio_choreo_choreolib-cpp_linuxarm64": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.2/ChoreoLib-cpp-2026.0.2-linuxarm64.zip",
-              "sha256": "9223d3127d76a0dd4445c00db46698506dda569962aa05a7989d5a6033405773",
+              "url": "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-cpp/2026.0.3/ChoreoLib-cpp-2026.0.3-linuxarm64.zip",
+              "sha256": "ff8df4645216510eff0515758df09a7069a24933875de11d28bff7781f452398",
               "build_file": "@@bzlmodrio-choreolib+//private/cpp/ChoreoLib-cpp:shared.BUILD.bazel"
             }
           },
           "bazelrio_choreo_linux-x86_64-standalone": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.2/Choreo-v2026.0.2-Linux-x86_64-standalone.zip",
-              "sha256": "9d780086edabdd30b94fc53f5ea76d49532be17085e2158d947fcbf5b2c9e839",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.3/Choreo-v2026.0.3-Linux-x86_64-standalone.zip",
+              "sha256": "e70d421d067ed3faeaeae4ad537ab7e82eabce98354e694820b612190ab1de4b",
               "build_file_content": "exports_files([\"choreo\", \"choreo-cli\", ])"
             }
           },
           "bazelrio_choreo_macos-aarch64-standalone": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.2/Choreo-v2026.0.2-macOS-aarch64-standalone.zip",
-              "sha256": "789d0841f1ab10f1dd238cd0dd4b67b0fd49b7128b383952b6466f8fe2a567c8",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.3/Choreo-v2026.0.3-macOS-aarch64-standalone.zip",
+              "sha256": "df9bf5c383d129bcb2965c97f1f3c9bb1ece553a28a190a605edb457df308e12",
               "build_file_content": "exports_files([\"choreo\", \"choreo-cli\", ])"
             }
           },
           "bazelrio_choreo_macos-x86_64-standalone": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.2/Choreo-v2026.0.2-macOS-x86_64-standalone.zip",
-              "sha256": "81e7ea09d44298fbf8be9706980fda707a8ced9aae9493819a562da84d7ef418",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.3/Choreo-v2026.0.3-macOS-x86_64-standalone.zip",
+              "sha256": "4b0f1836f26ec75bf14b08820b55f9be7fe9dd711df76ec11a397917bc4295f5",
               "build_file_content": "exports_files([\"choreo\", \"choreo-cli\", ])"
             }
           },
           "bazelrio_choreo_windows-aarch64-standalone": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.2/Choreo-v2026.0.2-Windows-aarch64-standalone.zip",
-              "sha256": "ec9b6cbeaf62ed9b9e6574a23cfaeb0b099df17f2dd54b46afc75abf42a6aa05",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.3/Choreo-v2026.0.3-Windows-aarch64-standalone.zip",
+              "sha256": "1307205574d2d7e4fbf7d6eb80a7d6cad3b5620c316880b2d54484154f98459f",
               "build_file_content": "exports_files([\"choreo.exe\", \"choreo-cli.exe\", ])"
             }
           },
           "bazelrio_choreo_windows-x86_64-standalone": {
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
-              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.2/Choreo-v2026.0.2-Windows-x86_64-standalone.zip",
-              "sha256": "90082e2fd9d019bd2b9fc13377c8ee60689e35182434ac40c7165f0fd928071f",
+              "url": "https://github.com/SleipnirGroup/Choreo/releases/download/v2026.0.3/Choreo-v2026.0.3-Windows-x86_64-standalone.zip",
+              "sha256": "bd81fba4f210b105003660d8963ee8ad4fe92340d0216f055544b89bf3ba73c3",
               "build_file_content": "exports_files([\"choreo.exe\", \"choreo-cli.exe\", ])"
             }
           }
@@ -4836,8 +4836,8 @@
     },
     "@@bzlmodrio-choreolib+//:maven_java_deps.bzl%setup_bzlmodrio_choreolib_java_dependencies": {
       "general": {
-        "bzlTransitiveDigest": "H/yZKKbP1k2aR4MPlRiq68y4crB1GRUpo8iGzgSYGiQ=",
-        "usagesDigest": "G/LCW6QkXlkLIV9EwCD0aLKR0jGblm+6QrIED5nG6aw=",
+        "bzlTransitiveDigest": "IlJY4Vc3n3ZAS4aPSuFwkfNy/L32b8B3X7W6JmKB5wU=",
+        "usagesDigest": "JQeHUrW3a8KsS9E7+B+eznuurcFX6ceK8axMWBIO7i0=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -4847,15 +4847,15 @@
             "attributes": {
               "generated_rule_name": "choreo_choreolib_java",
               "artifact_urls": [
-                "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-java/2026.0.2/ChoreoLib-java-2026.0.2.jar"
+                "https://frcmaven.wpi.edu/artifactory/sleipnirgroup-mvn-release/choreo/ChoreoLib-java/2026.0.3/ChoreoLib-java-2026.0.3.jar"
               ],
               "srcjar_urls": [],
-              "canonical_id": "choreo:ChoreoLib-java:2026.0.2",
+              "canonical_id": "choreo:ChoreoLib-java:2026.0.3",
               "rule_name": "java_import",
               "tags": [
-                "maven_coordinates=choreo:ChoreoLib-java:2026.0.2"
+                "maven_coordinates=choreo:ChoreoLib-java:2026.0.3"
               ],
-              "artifact_sha256": "c43e550c8db10af2d47db09f9b433bc5f1b6f02b17b33fafb2393a08c9a38606"
+              "artifact_sha256": "b1210ca2eabfc61c5ff21b42cc4f2e4caba42031c2e40f566796dd083d62645f"
             }
           }
         },
